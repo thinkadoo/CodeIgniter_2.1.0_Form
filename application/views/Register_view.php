@@ -37,7 +37,7 @@
     $attributes = array('class' => 'form-vertical', 'id' => '');
     echo form_open('Registration', $attributes); ?>
 
-
+    <div class="well span4">
 
     <fieldset>
 
@@ -91,15 +91,13 @@
 
         <div class="row">
             <div class="span4">
-                <div class="well">
-                    <?php echo form_submit('submit', 'Submit'); ?>
-                </div>
+                <?php echo form_submit('submit', 'Submit'); ?>
             </div>
         </div>
 
-
-
     </fieldset>
+
+    </div>
 
     <?php echo form_close(); ?>
 
