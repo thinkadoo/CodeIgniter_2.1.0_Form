@@ -32,12 +32,13 @@
         <p class="lead">CodeIgniter Form.</p>
     </header>
 
+<div class="row">
 
     <?php // Change the css classes to suit your needs
-    $attributes = array('class' => 'form-vertical', 'id' => '');
+    $attributes = array('class' => 'form span', 'id' => '');
     echo form_open('Registration', $attributes); ?>
 
-    <div class="well span4">
+    <div class="well">
 
     <fieldset>
 
@@ -45,7 +46,7 @@
             <label class="control-label" for="first_name">First Name <span>*</span></label>
 
             <div class="controls docs-input-sizes">
-                <input class="span4" id="first_name" type="text" name="first_name" maxlength="255"
+                <input class="input-large" id="first_name" type="text" name="first_name" maxlength="255"
                        value="<?php echo set_value('first_name'); ?>"/>
             </div>
             <?php echo form_error('first_name'); ?>
@@ -55,7 +56,7 @@
             <label class="control-label" for="last_name">Last Name</label>
 
             <div class="controls docs-input-sizes">
-                <input class="span4" id="last_name" type="text" name="last_name" maxlength="255"
+                <input class="input-large" id="last_name" type="text" name="last_name" maxlength="255"
                        value="<?php echo set_value('last_name'); ?>"/>
             </div>
             <?php echo form_error('last_name'); ?>
@@ -65,7 +66,7 @@
             <label class="control-label" for="user_name">User Name <span>*</span></label>
 
             <div class="controls">
-                <input class="span4" id="user_name" type="text" name="user_name" maxlength="255"
+                <input class="input-large" id="user_name" type="text" name="user_name" maxlength="255"
                        value="<?php echo set_value('user_name'); ?>"/>
             </div>
             <?php echo form_error('user_name'); ?>
@@ -75,7 +76,7 @@
             <label class="control-label" for="email">Email</label>
 
             <div class="controls docs-input-sizes">
-                <input class="span4" id="email" type="text" name="email" maxlength="40" value="<?php echo set_value('email'); ?>"/>
+                <input class="input-large" id="email" type="text" name="email" maxlength="40" value="<?php echo set_value('email'); ?>"/>
             </div>
             <?php echo form_error('email'); ?>
         </div>
@@ -84,13 +85,13 @@
             <label label class="control-label" for="phone">Phone</label>
 
             <div class="controls docs-input-sizes">
-                <input class="span4" id="phone" type="text" name="phone" maxlength="16" value="<?php echo set_value('phone'); ?>"/>
+                <input class="input-large" id="phone" type="text" name="phone" maxlength="16" value="<?php echo set_value('phone'); ?>"/>
             </div>
             <?php echo form_error('phone'); ?>
         </div>
 
         <div class="row">
-            <div class="span4">
+            <div class="span">
                 <?php echo form_submit('submit', 'Submit'); ?>
             </div>
         </div>
@@ -100,6 +101,8 @@
     </div>
 
     <?php echo form_close(); ?>
+
+</div>
 
 </div>
 
